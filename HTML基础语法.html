@@ -1,0 +1,232 @@
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title style="background-color: red;">文档标题</title>
+</head>
+<body style="background-color: yellow">
+<h1 style="background-color: red">标题1</h1>
+<h2 style="text-align: center;">标题2</h2>      <!--=text align属性规定了元素中文本对齐方式--->
+<hr/><!---定义水平线--->
+<p style="font-family: arial;color:red;font-size:20px;">定义段落</p>
+<br/><!---换行--->
+<p>styles属性淘汰"旧的"bgcolor属性，eg：见标题h1,以及定义段落</p><br/>
+<a href="http://www.w3school.com.cn" target="_blank">访问w3school网站，target表示新标签页</a><br/>
+
+1.文本格式化标签:
+<br/>
+<b>定义粗体文本---（Bold）</b><br/>
+<big>定义大号文本</big><br/>
+<em>定义着重文字。</em><br/>
+<i>定义斜体文字----(italic)</i><br/>
+<small>定义小号字体---(smaller)</small><br/>
+<strong>定义加重语气</strong><br/>
+<sub>定义下标字</sub><br/>
+<ins>定义插入字</ins><br/>
+<del>定于删除字----(strikethrough)strike标签被del取代</del><br/>
+<p>如果文本不是超链接，就不要<u>对其使用下划线，先使用style代替</u>。</p><br/>
+
+2.计算机输出”标签:
+<br/>
+
+<code>定义计算机代码</code><br/>
+<kbd>定义键盘码,它表示文本是从键盘上键入的</kbd><br/>
+<samp>定义计算机代码样本。</samp><br/>
+<tt>定义打字机代码。</tt><br/>
+<var>定义数学变量</var><br/>
+<pre>定义预格式文本</pre><br/>
+
+3.引用、引用和术语定义
+<br/>
+<br/>
+<abbr title="鼠标移动到上面时显示">定义缩写</abbr><br/>
+<acronym>定义首字母缩写</acronym><br/>
+<address>定义文档或文章的联系信息（作者/拥有者）</address><br/>
+<bdo dir="rtl">定义文字方向</bdo><br/>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">定义长的引用，blockquote 元素前后添加了换行，并增加了外边距</blockquote><br/>
+<q>定义短的引用语，通俗就是加双引号</q><br/>
+<cite> 元素定义著作的标题。浏览器通常会以斜体显示 </cite><br/>
+<dfn title="鼠标移动到上面时显示">定义一个定义项目</dfn><br/>
+<br/>
+
+
+4.HTML样式-CSS:CSS (Cascading Style Sheets) 用于渲染HTML元素标签的样式.
+</br>
+
+<li>外部样式表:当样式需要被应用到很多页面的时候，外部样式表将是理想的选择.</li>
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<li>内部样式表:当单个文件需要特别样式时，就可以使用内部样式表。你可以在<head> 部分通过 <style>标签定义内部样式表</li>
+<head>
+	<style type="text/css">
+		body {background-color: red}
+		p {margin-left: 20px}
+	</style>
+</head>
+
+<li>内联样式:当特殊的样式需要应用到个别元素时，就可以使用内联样式。</li>
+<p style="color: red;margin-left: 20px">
+	这是一个段落！
+</p>
+</br>
+
+5.HTML链接：
+</br>
+<a href="url">Link text</a></br>
+<P>图片带链接
+<a href="http://www.runoob.com/html/html-css.html" target="_blank"><img border="0"
+	src="C:\Users\西城\Desktop\捕获.PNG" ></a></br>
+</P>
+ <a href="#tips">基本注意事项跳转到这里</a>
+ </br>
+ </br>
+ <a name="tips">基本的注意事项</a>
+
+<p>
+这是另一个 mailto 链接：
+<a href="mailto:someone@microsoft.com?cc=someoneelse@microsoft.com&bcc=andsomeoneelse2@microsoft.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!">发送邮件！</a>
+</p>
+
+5.图像：
+<br>
+<img src="url" align="top" width="100" height="100" alt="图片无法加载是显示">
+
+6.表格：
+<br>
+<table border="1">   <!---border表示边框--->
+	<caption>表格的整体标题</caption>
+	<tr>
+		<th>第一列标题</th>
+		<th colspan="2">第二列标题</th>  <!---colspan表示占两列--->
+	</tr>
+	<tr><!---行--->
+		<td>第一列</td> <!---列--->
+		<td>第二列</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+<table border="1" style="background-color: red" >
+	<tr>
+		<th>第一行标题</th>
+		<td>Bill Gates</td>
+	</tr>
+	<tr>
+		<th rowspan="2">第二行标题</th>  <!---rowspan表示两行--->
+		<td style="background-color: yellow" align="left">557 77 654</td>
+	</tr>
+
+	<tr>
+		<td>555 77 855</td>
+	</tr>
+</table>
+
+<table frame="box">  <!---frame表示边框属性 box表示所有边框--->
+</table>
+
+7.列表：
+<br>
+	1.无序列表：
+	<ul type="Circle">  <!---type表示无序列表的方式，如圆形--->
+		<li>Coffee</li>
+		<li>Milk</li>
+	</ul>
+	2.有序列表：
+	<ol type="i">    <!---type表示有序类型如字母A罗马字母i等--->
+		<li>Coffee</li>
+		<li>Milk</li>
+	</ol>
+	3.嵌套列表:
+	<ul>
+		<li>咖啡</li>
+		<li>绿茶</li>
+			<ol>
+				<li>中国茶</li>
+				<li>非洲茶</li>
+			</ol>
+	4.定义列表：
+	<dl>
+		<dt>计算器</dt>
+		<dd>用来计算的仪器....</dd>
+	</dl>
+
+8.HTML区块
+
+HTML可以通过div和span将元素组合起来
+大多数html元素被定义为<b>块级元素</b>或<b>内联元素</b>
+<b>块级元素</b>在浏览器显示时，通常会以新行来开始（结束）
+实例：<h1>,<p>,<ul> ,<table>
+<b>内联元素</b>在显示时通常不会以新行开始。
+实例：<b>,<td>,<a href="">,<img src="">
+
+<div>元素是块级元素，它用于组合其他html元素的容器，div元素没有特定含义，属于块级元素</div>
+如果与css一同使用，<div>元素可用于对大的内容块设置样式属性。</div>
+<div>元素的另外一个常见的用途是文档布局，取代了使用表格定义布局的老式方法</div>
+
+<span>元素是内联元素，可用于作业本的容器</span>
+<span>没有特定的含义</span>
+当与css一同使用时，<span>元素可用于为部分文本设置样式属性</span>
+
+9.HTML类
+
+对HTML进行分类（设置类），使我们能够为元素的类定义CSS
+div使用方法：
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.cities{
+			background-color: red;
+			color: white;
+			margin: 20px;
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="cities">
+		<h2>伦敦</h2>
+		<p>
+			伦敦是和英国的首都。是远古时代的一个很早的英国城市。
+		</p>
+	</div>
+	<div class="cities">
+		<h2>上海</h2>
+		<p>
+			上海是中国的经济和政治中心，没有之一鸭，
+		</p>
+	</div>
+</body>
+<body>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		span.red {color: red;}
+	</style>
+</head>
+<body>
+<h1>我的<span class="red">第一次span标签使用</span>方法</h1>
+</body>
+</html>
+</body>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
